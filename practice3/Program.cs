@@ -58,8 +58,7 @@ namespace practice3
 
             while (numOfSongs > 0)
             {
-                int rndIndex = rnd.Next(0, numOfSongs);
-
+                int rndIndex = rnd.Next(0, numOfSongs + 1);
                 Song temp = playlist[numOfSongs];
                 playlist[numOfSongs] = playlist[rndIndex];
                 playlist[rndIndex] = temp;
